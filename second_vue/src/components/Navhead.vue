@@ -1,15 +1,18 @@
 <template>
 	<div class="head">
-		<ul class="head_ul">
+		<div class="head_first">
+			<ul class="head_ul">
 			<router-link tag='li':to='item.ref' v-for="(item,index) in items" :key='index' :class="{'isActive':item.name == $route.name}">
 				{{item.name}}
 			</router-link>
-		</ul>
-		<div class="head_input">
-			<input type="text" placeholder="搜索 课程 / 问答" name="搜索">
-			<i class="iconfont">&#xe603;</i>
-			<span>登陆</span>
+			</ul>
+			<div class="head_input">
+				<input type="text" placeholder="搜索 课程 / 问答" name="搜索">
+				<i class="iconfont">&#xe603;</i>
+				<span>登陆</span>
+			</div>
 		</div>
+		
 		<div class="splider_all" v-on:mouseover="stop()" v-on:mouseout="move()">
 			<div class="head_splider" >
 				<transition-group tag='ul' name="bounce">
@@ -38,7 +41,7 @@
 						name:'首页'
 					},
 					{
-						ref:'/course.htm',
+						ref:'/course.html',
 						name:'课程'
 					},
 					{
@@ -47,7 +50,7 @@
 					},
 					{
 						ref:'news.html',
-						name:'咨询'
+						name:'资讯'
 					}
 				],
 				imgs:[
@@ -97,16 +100,25 @@
 	.head{
 		width: 100%;
 		height: 370px;
+		
 	}
-	.head ul{
+	.head_first{
+		width: 938px;
+		margin: 0px auto;
+	}
+	.head_ul{
+		
 		list-style: none;
 		display: flex;
 		float: left;
 	}
 	.head_ul li{
-		margin: 20px 45px;
+		height: 100%;
+		width: 120px;
 		color: #777;
 		font-size: 18px;
+		line-height: 70px;
+		cursor: pointer;
 	}
 	.head_ul li:first-child{
 		margin-left: 0px;
@@ -143,7 +155,7 @@
 		color: white;
 	}
 	.splider_all{
-		width: 960px;
+		width: 100%;
 		overflow: hidden;
 		position: relative;
 		height: 300px;
@@ -151,7 +163,7 @@
 	}
 	.head_splider{
 		height: 300px;
-		width: 960px;
+		width: 100%;
 	}
 	.head_splider ul{
 		list-style: none;
@@ -160,7 +172,7 @@
 	}
 	.head_splider img{
 		height: 300px;
-		width: 960px;
+		width: 100%;
 	}
 	.dot{
 		position: absolute;
@@ -179,5 +191,8 @@
 	.active{
 		border: 2px solid #2C3E50 !important;
 		background: #2C3E50;
+	}
+	.isActive{
+		background: #E7E7E7;
 	}
 </style>
