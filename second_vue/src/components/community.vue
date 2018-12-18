@@ -149,7 +149,7 @@
 		border-radius:15px ;
 		}
 	.community_part ul{
-		margin: 60px 30px;
+		margin: 60px 0px 0px 30px;
 		text-align: left;
 		list-style: none;
 		color:#ACACAC ;

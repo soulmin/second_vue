@@ -169,6 +169,9 @@
 		margin: 10px 12px;
 		vertical-align: middle;
 	}
+	.home_bottom{
+		overflow: hidden;
+	}
 	.home_div{
 		display: inline-block;
 		width: 290px;

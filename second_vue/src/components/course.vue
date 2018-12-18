@@ -86,7 +86,7 @@
 	.cursor{
 		width: 100%;
 		background: #EEEEEE;
-		padding-top: 30px;
+		padding: 30px 0px 10px 0px;
 	}
 	.cursor ul{
 		width: 938px;

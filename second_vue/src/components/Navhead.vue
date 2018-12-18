@@ -107,7 +107,6 @@
 		margin: 0px auto;
 	}
 	.head_ul{
-		
 		list-style: none;
 		display: flex;
 		float: left;

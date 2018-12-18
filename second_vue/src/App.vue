@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+html{
+	overflow-x:hidden
+}
 *{
 	margin: 0px;
 	padding: 0px;
