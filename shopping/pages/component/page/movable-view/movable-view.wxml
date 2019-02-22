@@ -1,0 +1,59 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+<view class="movable-contain">
+  <template is="head" data="{{title:'movable-view'}}"/>
+  <view class="movable-first">
+    <text>ovable-view区域小于movable-area</text>
+    <movable-area class="first-big">
+      <movable-view x="{{x}}" y="{{y}}" direction="all" class="first-inlink">text</movable-view>
+    </movable-area>
+    <button bindtap="tap" class="first-button" type="primary">点击移动到（30px,30px）</button>
+  </view>
+
+  <view class="movable-first">
+    <text>movable-view区域大于movable-area</text>
+    <movable-area>
+      <movable-view class="max" direction="all">text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class="movable-first">
+    <text>只可以横向移动</text>
+    <movable-area>
+      <movable-view direction="horizontal">text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class="movable-first">
+    <text>只可以纵向移动</text>
+    <movable-area>
+      <movable-view direction="vertical">text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class="movable-first">
+    <text>可超出边界</text>
+    <movable-area>
+      <movable-view directionn="all" out-of-bounds>text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class="movable-first">
+    <text>带有惯性</text>
+    <movable-area>
+      <movable-view direction="all" inertia>text</movable-view>
+    </movable-area>
+  </view>
+
+  <view class="movable-seventh">
+    <text>可缩放</text>
+    <movable-area scale-area>
+      <movable-view direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="{{scale}}">text</movable-view>
+    </movable-area>
+    <view class="btn-area">
+      <button bindtap="tap2" type="primary">点击放大3倍</button>
+    </view>
+    
+  </view>
+  <template is="foot" />
+</view>

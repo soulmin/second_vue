@@ -1,0 +1,83 @@
+/* pages/component/index.wxss */
+.component_first{
+  margin-top:80rpx; 
+  text-align: center;
+  font-size: 25rpx;
+  height: 240rpx;
+  line-height: 45rpx;
+}
+.component_first image{
+  width: 80rpx;
+  height: 80rpx; 
+  margin: 10rpx 0rpx;
+}
+.component_first_child{
+  margin: 0px auto;
+  width: 70%;
+  height: 60rpx;
+  color:#888888 ;
+}
+.component_second{
+  margin: 20rpx 30rpx;
+}
+.child_roll{
+  background: #ffff;
+  margin: 20rpx 0rpx;
+  padding: 25rpx 20rpx;
+  overflow: hidden;
+  display: flex;
+}
+.child_word{
+  flex: 1;
+}
+.child_image{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+}
+.child_roll-show{
+  opacity: .2;
+}
+.child_hidden{
+  height: 0;
+  overflow: hidden;
+}
+.child_hidden_show{
+  height: auto;
+}
+.navigator-box{
+  position: relative;
+  background-color: red
+  line-height: 1.4;
+  font-size: 24rpx;
+  transform: .3s;
+  opacity: 0;
+}
+.navigator-box-show{
+  opacity: 1;
+  transform: translateY(0);
+  background:#888888;
+}
+.navigator navigator:first-child{
+  border-top: solid #ffff 4rpx;
+}
+.navigator{
+  position: relative;
+  display: flex;
+  padding: 20rpx 30rpx;
+  border-bottom: solid #ffff 4rpx;
+}
+.navigator_text{
+  font-size: 32rpx;
+  flex: 1;
+}
+.navigator_arrow{
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 1px solid #9D9D9D;
+    border-right:1px solid #9D9D9D;
+    transform:rotate(45deg);
+    float: right;
+    margin: 20rpx;
+    color: #AAAAAA;
+}

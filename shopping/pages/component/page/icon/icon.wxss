@@ -1,0 +1,17 @@
+/* pages/component/page/icon/icon.wxss */
+.icon-contain{
+  margin: 40rpx 60rpx;
+}
+.icon-box{
+  margin-bottom:40rpx; 
+  display: flex;
+}
+.icon-sucess-artile{
+  margin: 0rpx 40rpx;
+}
+.icon-sucess-desc{
+  font-size: 26rpx;
+  color: #888888;
+  line-height: 40rpx;
+  margin-top: 20rpx;
+}

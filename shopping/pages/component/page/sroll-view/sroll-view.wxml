@@ -1,0 +1,31 @@
+<!--pages/component/page/swiper-view/swiper-view.wxml-->
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+<view class="sroll">
+  <template is="head" data="{{title:'scroll-view'}}"/>
+  <view class="sroll-vertical">
+    <view class="vertical-title">
+      <text>Vertical Scroll\n纵向滚动</text>
+    </view>
+    <view class="sroll-box">
+      <scroll-view  scroll-y="true" class="vertical-box" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" srcoll-into-view="{{toView}}" srcol-top="{{scrollTop}}">
+        <view id="demo1" class="box vbox_1"></view>
+        <view id="demo2" class="box vbox_2"></view>
+        <view id="demo3" class="box vbox_3"></view>
+       </scroll-view>
+    </view>
+  </view>
+  <view class="sroll-horizontal">
+    <view class="horizontal-title">
+      <text>Horizontal Scroll\n横向滚动</text>
+    </view>
+    <view class="">
+       <scroll-view scroll-x="true" bindscroll="scroll" class="horizontal-box">
+      <view id="demo1" class="box scroll-view-item-H hbox_1"></view>
+      <view id="demo2" class="box scroll-view-item-H hbox_2"></view>
+      <view id="demo3" class="box scroll-view-item-H hbox_3"></view>
+    </scroll-view>
+    </view>
+  </view>
+  <template is="foot"/>
+</view>

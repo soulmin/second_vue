@@ -1,0 +1,52 @@
+/* pages/component/page/cover-view/cover-view.wxss */
+.cover-body{
+  margin: 40rpx;
+}
+.cover-section{
+  height: 840rpx;
+}
+.box{
+  width: 200rpx;
+  height: 300rpx;
+}
+.demo-text-1{
+  background: rgba(26, 173, 25, 0.7);
+}
+.demo-text-2{
+  background: rgba(39, 130, 215, 0.7);
+}
+.demo-text-3{
+  background: rgba(255, 255, 255, 0.7);
+}
+.flex-wrp{
+   display: flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+}
+.cover-view{
+ position: absolute;
+ top:calc(50% - 140rpx);
+ left: calc(50% - 300rpx);
+}
+.demo-text-1::before{
+  content:'A';
+  position: relative;
+  top: 140rpx;
+  left: 50%;
+  color: white;
+}
+.demo-text-2::before{
+  content:'B';
+  position: relative;
+   top: 140rpx;
+  left: 50%;
+  color: white;
+}
+.demo-text-3::before{
+  content:'C';
+  position: relative;
+   top: 140rpx;
+  left: 50%;
+  color: white;
+}

@@ -1,0 +1,19 @@
+.text-body{
+  margin: 40rpx 60rpx;
+  height: 850rpx;
+
+}
+.text-first{
+  width: 100%;
+  min-height:400rpx;
+  background: white;
+  margin-bottom: 80rpx;
+  padding: 40rpx 0rpx;
+  text-align: center;
+  color: #353535;
+  line-height: 2em;
+}
+button{
+  margin-bottom:40rpx; 
+  width: 100%;
+}

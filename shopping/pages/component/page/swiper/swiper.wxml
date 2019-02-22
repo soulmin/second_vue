@@ -1,0 +1,52 @@
+<import src="../../../common/head.wxml"/>
+<import src="../../../common/foot.wxml" />
+<view class="swiper">
+  <template is="head" data="{{title:'swiper'}}"/>
+  <view class="swipe-body">
+    <view class="swipe-square">
+      <view class="square-child">
+        <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+          <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item>
+              <view class="swipe-item {{item}}"></view>
+            </swiper-item>
+          </block>       
+        </swiper>
+      </view>
+    </view>
+
+    <view class="swipe-insplain">
+      <view class="insplain-dot">
+        <view class="dot">指示点</view>
+        <view class="select">
+          <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots"/>
+        </view>
+      </view>
+
+      <view class="insplain-play">
+        <view class="play">自动播放</view>
+        <view class="select">
+          <switch checked='{{autoplay}}' bindchange="changeAutoplay" />
+        </view>
+      </view>
+    </view>
+
+    <view class="swipe-time">
+      <view class="switch">
+        <view class="words">
+          <text class="words_time">幻灯片切换时长（ms）</text>
+          <text class="words_data">{{duration}}</text>
+        </view>
+        <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" />
+      </view>
+      <view class="autoplay">
+        <view class="words">
+          <text class="words_time">自动播放时间时长（ms）</text>
+          <text class="words_data">{{interval}}</text>
+        </view>
+        <slider bindchange="intervalChange" value="{{interval}}" min="2000" max="10000"></slider>
+      </view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>

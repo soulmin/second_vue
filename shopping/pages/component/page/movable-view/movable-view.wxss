@@ -1,0 +1,64 @@
+/* pages/component/page/movable-view/movable-view.wxss */
+.movable-first{
+  margin: 40rpx;
+}
+.movable-first text{
+  color: #999999;
+  margin-bottom: 40rpx;
+}
+.first-big{
+  width: 400rpx;
+  height: 400rpx;
+  background: #CCCCCC;
+  margin-bottom: 40rpx;
+}
+.first-inlink{
+  width: 100rpx;
+  height: 100rpx;
+  background: #1AAD19;
+  color: white;
+  z-index: 1;
+}
+movable-area{
+  width: 400rpx;
+  height: 400rpx;
+  background: #CCCCCC;
+  overflow: hidden;
+}
+movable-view{
+  width: 100rpx;
+  height: 100rpx;
+  background: #1AAD19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.max{
+  width: 600rpx;
+  height: 600rpx;
+  background: #1AAD19;
+  color: white;
+}
+.movable-second text{
+  color: #999999;
+  margin-bottom: 40rpx;
+  color: #999999;
+}
+.movable-first text{
+  margin-bottom:60rpx; 
+  display: inline-block;
+}
+.movable-seventh{
+  margin: 40rpx;
+}
+.btn-area{
+  width: 100%;
+  margin: 40rpx 0rpx;
+  color: white;
+}
+.movable-seventh text{
+  color: #CCCCCC;
+  display: block;
+  margin-bottom: 40rpx;
+}

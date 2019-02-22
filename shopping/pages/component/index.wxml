@@ -1,0 +1,32 @@
+<!--pages/component/index.wxml-->
+<view class="component_index">
+  <view class="component_first">
+      <image src="image/logo.png"></image>
+      <view class="component_first_child">
+          以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。
+      </view>
+  </view>
+  <view class="component_second">
+      <view class="component_second_child">
+        <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+          <view>
+            <view id="{{item.id}}" class="child_roll {{item.open ? 'child_roll-show': ''}}" bindtap="kindToggle">
+                <view class="child_word">{{item.name}}</view>
+                <image class="child_image" src="image/{{item.id}}.png"></image>
+            </view>
+            
+            <view class="child_hidden {{item.open ? 'child_hidden_show':''}}">
+              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+                <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+                  <navigator url="page/{{page}}/{{page}}" class="navigator">
+                    <view class="navigator_text">{{page}}</view>
+                    <view class="navigator_arrow"></view>
+                  </navigator>
+                </block>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+  </view>
+</view>

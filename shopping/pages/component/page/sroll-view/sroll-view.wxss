@@ -1,0 +1,113 @@
+/* pages/component/page/sroll-view/sroll-view.wxss */
+.sroll{
+  margin: 0rpx 40rpx;
+  color: #999999;
+  
+}
+.sroll-vertical{
+  margin: 40rpx 0rpx;
+  position: relative;
+}
+.sroll-box{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+.vertical-title{
+  font-size: 26rpx;
+}
+.vertical-box{
+  
+  height: 300rpx;
+}
+.vertical-box::before{
+  content: 'A';
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 30rpx;
+}
+.sroll-horizontal{
+  position: relative;
+}
+.horizontal-title{
+  font-size: 26rpx;
+}
+.box{
+  width: 100%;
+  height: 300rpx;
+}
+#demo1{
+  background:#1AAD19;
+  margin-left: 60rpx;
+}
+#demo2{
+  background:#2782D7;
+}
+#demo3{
+  background: #F1F1F1;
+}
+.horizontal-box::before{
+  content: 'A';
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  color: white;
+  font-size: 30rpx;
+}
+.horizontal-box{
+  width: 100%;
+  white-space: nowrap;
+  height: 300rpx;
+  position: relative;
+}
+.scroll-view-item-H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+.vbox_1::before{
+  content: 'A';
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  color: white;
+}
+.vbox_2::before{
+  content: 'B';
+  position: absolute;
+  top: 140%;
+  left: 55%;
+  color: white;
+}
+.vbox_3::before{
+  content: 'C';
+  position: absolute;
+  top: 240%;
+  left: 55%;
+  color: white;
+}
+.hbox_1::before{
+  content: 'A';
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  color: white;
+}
+.hbox_2::before{
+  content: 'B';
+  position: absolute;
+  top: 45%;
+  left: 155%;
+  color: white;
+}
+.hbox_3::before{
+  content: 'C';
+  position: absolute;
+  top: 45%;
+  left: 255%;
+  color: white;
+}

@@ -1,0 +1,19 @@
+.check-contain{
+  margin: 0rpx 40rpx;
+}
+.first-words{
+  color: #999999;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+}
+checkbox{
+  margin-right:20rpx; 
+}
+.check-second{
+  color: #999999;
+  
+  margin: 40rpx 0rpx;
+}
+.check-words{
+  font-size: 26rpx;
+}

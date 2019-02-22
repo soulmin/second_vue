@@ -1,0 +1,32 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+<view class="check-contain">
+  <template is="head" data="{{title:'checkbox'}}" />
+    <view class="check-body">
+      <view class="check-first">
+        <view class="first-words">默认样式</view>
+        <label>
+          <checkbox value='cb' checked='true' />选中
+        </label>
+        <label>
+          <checkbox value='cb'/>未选中
+        </label>
+      </view>
+
+      <view class="check-second">
+        <view class="check-words">推荐展示样式</view>
+        <view class="check-box">
+          <checkbox-group bindchange="checkboxChange">
+            <label class="check-label" wx:for="{{items}}" wx:key="{{item.value}}">
+              <view>
+                <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+              </view>
+              <view class="check-title">{{item.name}}</view>
+            </label>
+          </checkbox-group>
+        </view>
+        
+      </view>
+    </view>
+  <template is="foot" />
+</view>

@@ -1,0 +1,30 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+<view class="container">
+  <template is="head" data="{{title:'view'}}" />
+
+  <view class="page_body">
+    <view class="page_body_first">
+      <view class="first_word">
+          <text>flex-direction: row\n横向布局</text>
+      </view>
+      <view class="first_box">
+        <view class="box_1"></view>
+        <view class="box_2"></view>
+        <view class="box_3"></view>
+      </view>
+    </view>
+
+    <view class="page_body_second">
+      <view class="second_word">
+          <text>flex-direction: column\n纵向布局</text>
+      </view>
+      <view class="second_box">
+        <view class="cbox_1"></view>
+        <view class="cbox_2"></view>
+        <view class="cbox_3"></view>
+      </view>
+    </view>
+  </view>
+  <template is="foot"/>
+</view>

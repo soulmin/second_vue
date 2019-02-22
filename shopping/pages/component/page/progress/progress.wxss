@@ -1,0 +1,17 @@
+.progress-contain{
+  margin: 40rpx 20rpx;
+}
+.progress-body{
+  height: 850rpx;
+}
+progress{
+  width: 100%;
+}
+.progress-box{
+  margin-bottom:80rpx; 
+  display: flex;
+}
+.progress-cancel{
+  display: inline-block;
+  margin-left:30rpx; 
+}
